@@ -1,0 +1,12 @@
+.menu-item
+{
+    /* Text style for "HOME About" */
+    display: inline-block;
+    color: white;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-left: 27px;
+}
