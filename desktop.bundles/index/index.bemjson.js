@@ -32,6 +32,14 @@ module.exports = {
                             })
                         }
                     ]
+                },
+                {
+                    elem : 'welcome',
+                    content : 'welcome on <span>spirit8</span>'
+                },
+                {
+                    elem : 'description',
+                    content : 'We are a digital agency with <span>years of expirience</span> and with <span>extraordinary people</span>'
                 }
             ]
         },
