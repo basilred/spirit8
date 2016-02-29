@@ -26,10 +26,15 @@ module.exports = {
                             content : [
                                 'home', 'about', 'services', 'portfolio', 'testimonials', 'contact'
                             ].map(function (item) {
-                                return {
-                                    block: 'menu-item',
-                                    content: item
+                                var res = {
+                                    block : 'menu-item',
+                                    mix : [ { block : 'link', mods : { pseudo : true } } ],
+                                    content : item
                                 };
+                                if (item == 'home') {
+                                    res.mods = { active : true };
+                                }
+                                return res;
                             })
                         }
                     ]
@@ -44,15 +49,13 @@ module.exports = {
                         {
                             elem : 'description',
                             content : 'We are a digital agency with <span>years of expirience</span> and with <span>extraordinary people</span>'
-                        }        
+                        }
                     ]
+                },
+                {
+                    block : 'downarrow',
+                    mix : [ { block : 'link', mods : { pseudo : true } } ]
                 }
-            ]
-        },
-        {
-            block : 'footer',
-            content : [
-                'footer content goes here'
             ]
         }
     ]
