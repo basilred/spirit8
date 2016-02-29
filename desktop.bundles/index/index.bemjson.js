@@ -28,6 +28,7 @@ module.exports = {
                             ].map(function (item) {
                                 return {
                                     block: 'menu-item',
+                                    mix : [ { block : 'link', mods : { pseudo : true } } ],
                                     content: item
                                 };
                             })
@@ -44,8 +45,12 @@ module.exports = {
                         {
                             elem : 'description',
                             content : 'We are a digital agency with <span>years of expirience</span> and with <span>extraordinary people</span>'
-                        }        
+                        }
                     ]
+                },
+                {
+                    block : 'downarrow',
+                    mix : [ { block : 'link', mods : { pseudo : true } } ]
                 }
             ]
         },
