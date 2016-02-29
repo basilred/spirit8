@@ -26,11 +26,15 @@ module.exports = {
                             content : [
                                 'home', 'about', 'services', 'portfolio', 'testimonials', 'contact'
                             ].map(function (item) {
-                                return {
-                                    block: 'menu-item',
+                                var res = {
+                                    block : 'menu-item',
                                     mix : [ { block : 'link', mods : { pseudo : true } } ],
-                                    content: item
+                                    content : item
                                 };
+                                if (item == 'home') {
+                                    res.mods = { active : true };
+                                }
+                                return res;
                             })
                         }
                     ]
@@ -52,12 +56,6 @@ module.exports = {
                     block : 'downarrow',
                     mix : [ { block : 'link', mods : { pseudo : true } } ]
                 }
-            ]
-        },
-        {
-            block : 'footer',
-            content : [
-                'footer content goes here'
             ]
         }
     ]
