@@ -63,47 +63,49 @@ module.exports = {
             content : [
                 {
                     elem : 'image',
-                    mix : [ { block : 'image', url : 'about__image.png' } ]
-                },
-                {
-                    elem : 'content',
                     content : [
                         {
-                            elem : 'header',
-                            tag : 'h1',
+                            elem : 'content',
                             content : [
-                                'some words <span>about us</span>'
+                                {
+                                    elem : 'header',
+                                    tag : 'h1',
+                                    content : [
+                                        'some words <span>about us</span>'
+                                    ]
+                                },
+                                {
+                                    elem : 'text',
+                                    tag : 'p',
+                                    content : [
+                                        'We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.'
+                                    ]
+                                },
+                                {
+                                    block : 'list',
+                                    tag : 'ul',
+                                    content : [
+                                        '<span>Mission</span> - We deliver uniqueness and quality',
+                                        '<span>Skills</span> - Delivering fast and excellent results',
+                                        '<span>Clients</span> - Satisfied clients thanks to our experience'
+                                    ].map(function (item) {
+                                        return {
+                                            elem : 'list-item',
+                                            tag : 'li',
+                                            content : item
+                                        };
+                                    })
+                                },
+                                {
+                                    block : 'button',
+                                    mix : [ { block : 'about', elem : 'button' } ],
+                                    content : 'browse our work'
+                                }
                             ]
-                        },
-                        {
-                            elem : 'text',
-                            tag : 'p',
-                            content : [
-                                'We love building and rebuilding brands through our  specific skills. Using colour, fonts, and illustration, we brand companies in a way they will never forget.'
-                            ]
-                        },
-                        {
-                            block : 'list',
-                            tag : 'ul',
-                            content : [
-                                '<span>Mission</span> - We deliver uniqueness and quality',
-                                '<span>Skills</span> - Delivering fast and excellent results',
-                                '<span>Clients</span> - Satisfied clients thanks to our experience'
-                            ].map(function (item) {
-                                return {
-                                    elem : 'list-item',
-                                    tag : 'li',
-                                    content : item
-                                };
-                            })
-                        },
-                        {
-                            block : 'button',
-                            mix : [ { block : 'about', elem : 'button' } ],
-                            content : 'browse our work'
                         }
                     ]
                 }
+
             ]
         }
     ]
