@@ -1,0 +1,34 @@
+.caption
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    line-height: 22px;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0;
+    margin-bottom: 14px;
+
+    & > span
+        font-weight: 600;
+
+    &::before
+        // маленький знак подчеркивания
+        content: '';
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top : 76px;
+        width: 66px;
+        height: 4px;
+        background-color: rgba(252, 172, 69, 0.7);
+
+    &::after
+        // большой знак подчеркивания
+        content: '';
+        display: block;
+        margin: 0 auto;
+        margin-top: 36px;
+        width: 98px;
+        height: 4px;
+        background-color: #fcac45;

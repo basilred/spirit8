@@ -107,6 +107,18 @@ module.exports = {
                 }
 
             ]
+        },
+        {
+            block : 'team',
+            content : [
+                {
+                    block : 'caption',
+                    mix : [ { block : 'team', elem : 'caption' } ],
+                    content : [
+                        'meet <span>our team</span>'
+                    ]
+                }
+            ]
         }
     ]
 };
