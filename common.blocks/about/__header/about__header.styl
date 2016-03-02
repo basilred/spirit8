@@ -1,0 +1,30 @@
+.about__header
+    margin-top: 0;
+    color: #222;
+    font-family: 'Open Sans';
+    font-size: 34px;
+    line-height: 37px;
+    text-transform: uppercase;
+
+    /* Text style for "Some words" */
+    font-weight: 400;
+
+    & > span
+        /* Text style for "about us" */
+        font-weight: 700;
+
+    &::before
+        content: 'about us';
+        display: block;
+        color: #636363;
+        font-size: 20px;
+        line-height: 1em;
+        margin-bottom: 16px;
+
+    &::after
+        content: '';
+        display: block;
+        margin-top: 20px;
+        width: 100px;
+        height: 5px;
+        background-color: #fcac45;
