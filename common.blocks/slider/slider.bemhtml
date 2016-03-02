@@ -5,9 +5,9 @@ block('slider')(
                 block : 'slider-item',
                 content : [
                     {
-                        block : 'icon',
+                        block : 'image',
                         mix : [ { block : 'slider-item', elem : 'pic' } ],
-                        url : item.pic
+                        url : item.pic || item.url
                     },
                     {
                         elem : 'name',
