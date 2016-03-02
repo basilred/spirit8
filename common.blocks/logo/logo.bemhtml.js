@@ -1,3 +1,0 @@
-block('logo')(
-    tag()('span')
-);

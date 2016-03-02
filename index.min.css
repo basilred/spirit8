@@ -1,0 +1,279 @@
+/* ../../common.blocks/start/start.styl:begin */
+.start {
+  position: relative;
+  background-color: #111;
+  height: 790px;
+  padding: 0px calc((100% - 1146px) / 2);
+}
+/* ../../common.blocks/start/start.styl:end */
+/* ../../common.blocks/start/__head/start__head.styl:begin */
+.start__head {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 55px;
+}
+/* ../../common.blocks/start/__head/start__head.styl:end */
+/* ../../common.blocks/logo/logo.css:begin */
+.logo
+{
+    color: white;
+    text-transform: uppercase;
+
+    /*width: 86px;
+    height: 18px;*/
+
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+}
+/* ../../common.blocks/logo/logo.css:end */
+/* ../../libs/bem-components/common.blocks/menu/menu.styl:begin */
+.menu {
+  overflow-y: auto;
+}
+/* ../../libs/bem-components/common.blocks/menu/menu.styl:end */
+/* ../../common.blocks/menu-item/menu-item.css:begin */
+.menu-item
+{
+    /* Text style for "HOME About" */
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-family: Lato, sans-serif;;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-left: 27px;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+/* ../../common.blocks/menu-item/menu-item.css:end */
+/* ../../common.blocks/menu-item/_active/menu-item_active.styl:begin */
+.menu-item_active::after {
+  content: '';
+  box-sizing: border-box;
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: -webkit-linear-gradient(left, #292929 50%, #fcac45 50%);
+  background: linear-gradient(to right, #292929 50%, #fcac45 50%);
+  position: absolute;
+  bottom: -24px;
+  left: calc(50% - 30px);
+  cursor: auto;
+}
+/* ../../common.blocks/menu-item/_active/menu-item_active.styl:end */
+/* ../../common.blocks/start/__caption/start__caption.styl:begin */
+.start__caption {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 200px;
+}
+/* ../../common.blocks/start/__caption/start__caption.styl:end */
+/* ../../common.blocks/start/__welcome/start__welcome.styl:begin */
+.start__welcome {
+/* Base text style */
+  font-family: 'Open Sans', sans-serif;
+  font-size: 44px;
+  line-height: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+/* Text style for "wELCOME on" */
+  color: #999;
+  font-weight: 300;
+}
+.start__welcome > span {
+/* Text style for "spirit8" */
+  color: #fcac45;
+  font-weight: 700;
+}
+/* ../../common.blocks/start/__welcome/start__welcome.styl:end */
+/* ../../common.blocks/start/__description/start__description.styl:begin */
+.start__description {
+/* Base text style */
+  color: rgba(255,255,255,0.75);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+  text-align: center;
+/* Text style for "We are a digit" */
+  font-weight: 400;
+}
+.start__description > span {
+/* Text style for "years of exper" */
+  font-weight: 700;
+}
+/* ../../common.blocks/start/__description/start__description.styl:end */
+/* ../../common.blocks/downarrow/downarrow.styl:begin */
+.downarrow {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,0.75);
+  background: url("img/Y7SGNxA-KHfEBIrj2uxAse9gPQI.svg") no-repeat 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+}
+/* ../../common.blocks/downarrow/downarrow.styl:end */
+/* ../../common.blocks/about/about.styl:begin */
+.about {
+  padding: 100px calc((100% - 1146px) / 2);
+}
+/* ../../common.blocks/about/about.styl:end */
+/* ../../common.blocks/about/__image/about__image.styl:begin */
+.about__image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: url("img/vA0q24TKQB7o6KENKmNeB7NQS2o.png") no-repeat;
+  min-height: 504px;
+}
+/* ../../common.blocks/about/__image/about__image.styl:end */
+/* ../../common.blocks/about/__content/about__content.styl:begin */
+.about__content {
+  width: 40%;
+}
+/* ../../common.blocks/about/__content/about__content.styl:end */
+/* ../../common.blocks/about/__header/about__header.styl:begin */
+.about__header {
+  margin-top: 0;
+  color: #222;
+  font-family: 'Open Sans';
+  font-size: 34px;
+  line-height: 37px;
+  text-transform: uppercase;
+/* Text style for "Some words" */
+  font-weight: 400;
+}
+.about__header > span {
+/* Text style for "about us" */
+  font-weight: 700;
+}
+.about__header::before {
+  content: 'about us';
+  display: block;
+  color: #636363;
+  font-size: 20px;
+  line-height: 1em;
+  margin-bottom: 16px;
+}
+.about__header::after {
+  content: '';
+  display: block;
+  margin-top: 20px;
+  width: 100px;
+  height: 5px;
+  background-color: #fcac45;
+}
+/* ../../common.blocks/about/__header/about__header.styl:end */
+/* ../../common.blocks/about/__text/about__text.styl:begin */
+.about__text {
+  color: #6c6c6c;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 2em 0;
+}
+/* ../../common.blocks/about/__text/about__text.styl:end */
+/* ../../common.blocks/list/list.styl:begin */
+.list {
+  list-style-image: url("img/8V3IdB-WKDpmY2t9QudpthIuOq8.svg");
+  padding-left: 21px;
+  margin: 2em 0;
+}
+/* ../../common.blocks/list/list.styl:end */
+/* ../../common.blocks/list/__list-item/list__list-item.styl:begin */
+.list__list-item {
+  color: #5a5a5a;
+  font-family: 'Open Sans';
+  line-height: 25px;
+  font-size: 16px;
+  font-style: italic;
+}
+.list__list-item > span {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+}
+/* ../../common.blocks/list/__list-item/list__list-item.styl:end */
+/* ../../common.blocks/about/__button/about__button.styl:begin */
+.about__button {
+  width: 194px;
+  height: 47px;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 2px;
+  background: url("img/bkOePoVJpY4rS1wt0ypDTHcTrFY.svg") no-repeat 22px 50%;
+  color: #616161;
+  font-family: 'Open Sans';
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 33px;
+  text-transform: uppercase;
+  padding: 0 0 0 22px;
+}
+/* ../../common.blocks/about/__button/about__button.styl:end */
+/* ../../common.blocks/caption/caption.styl:begin */
+.caption {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 44px;
+  line-height: 22px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 14px;
+}
+.caption > span {
+  font-weight: 600;
+}
+.caption::before {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 76px;
+  width: 66px;
+  height: 4px;
+  background-color: rgba(252,172,69,0.7);
+}
+.caption::after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  margin-top: 36px;
+  width: 98px;
+  height: 4px;
+  background-color: #fcac45;
+}
+/* ../../common.blocks/caption/caption.styl:end */
+/* ../../common.blocks/page/page.css:begin */
+.page
+{
+    margin: 0;
+}
+/* ../../common.blocks/page/page.css:end */
