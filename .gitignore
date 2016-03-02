@@ -18,3 +18,5 @@ npm-debug.log
 
 # borschik's static freeze
 *bundles*/*/img/
+
+deploy/
