@@ -1,0 +1,28 @@
+block('slider')(
+    content()(function () {
+        return this.ctx.content.map(function (item) {
+            return {
+                block : 'slider-item',
+                content : [
+                    {
+                        block : 'icon',
+                        mix : [ { block : 'slider-item', elem : 'pic' } ],
+                        url : item.pic
+                    },
+                    {
+                        elem : 'name',
+                        content : item.name
+                    },
+                    {
+                        elem : 'position',
+                        content : item.position
+                    },
+                    {
+                        elem : 'desc',
+                        content : item.desc
+                    }
+                ]
+            };
+        });
+    })
+);

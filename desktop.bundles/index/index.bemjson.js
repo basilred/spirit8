@@ -117,6 +117,35 @@ module.exports = {
                     content : [
                         'meet <span>our team</span>'
                     ]
+                },
+                {
+                    block : 'slider',
+                    content : [
+                        {
+                            pic : '../../common.blocks/slider-item/__pic/statham.jpeg',
+                            name : 'Jason Statham',
+                            position : 'Knife designer',
+                            desc : 'Do not seek to change what has come before. Seek to create that which has not.'
+                        },
+                        {
+                            pic : '../../common.blocks/slider-item/__pic/vandamme.jpeg',
+                            name : 'Van Damme',
+                            position : 'No english',
+                            desc : 'Do not seek to change what has come before. Seek to create that which has not.'
+                        },
+                        {
+                            pic : '../../common.blocks/slider-item/__pic/stallone.jpeg',
+                            name : 'Silvester Stallone',
+                            position : 'Cigar lover',
+                            desc : 'Do not seek to change what has come before. Seek to create that which has not.'
+                        },
+                        {
+                            pic : '../../common.blocks/slider-item/__pic/lee.jpg',
+                            name : 'Jet Lee',
+                            position : 'I need more money',
+                            desc : 'Do not seek to change what has come before. Seek to create that which has not.'
+                        }
+                    ]
                 }
             ]
         }
