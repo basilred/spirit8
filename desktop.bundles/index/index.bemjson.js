@@ -120,7 +120,7 @@ module.exports = {
                 },
                 {
                     block : 'slider',
-                    content : [
+                    data : [
                         {
                             url : '../../common.blocks/slider-item/__pic/statham.jpeg',
                             name : 'Jason Statham',
@@ -144,6 +144,12 @@ module.exports = {
                             name : 'Jet Lee',
                             position : 'I need more money',
                             desc : 'Do not seek to change what has come before. Seek to create that which has not.'
+                        },
+                        {
+                            pic : '../../common.blocks/slider-item/__pic/lee.jpg',
+                            name : 'Jet Lee',
+                            position : 'I need more money',
+                            desc : 'Do not seek to change what has come before. Seek to create that which has not.'
                         }
                     ]
                 },
@@ -152,7 +158,10 @@ module.exports = {
                     // borschik иначе не "видит" их.
                     block : 'image',
                     // url : '../../common.blocks/slider-item/__pic/lee.jpg'
-                }
+                },
+                // {
+                //     elem : 'controller'
+                // }
             ]
         }
     ]

@@ -1,28 +1,37 @@
 block('slider')(
     content()(function () {
-        return this.ctx.content.map(function (item) {
-            return {
-                block : 'slider-item',
-                content : [
-                    {
-                        block : 'image',
-                        mix : [ { block : 'slider-item', elem : 'pic' } ],
-                        url : item.pic || item.url
-                    },
-                    {
-                        elem : 'name',
-                        content : item.name
-                    },
-                    {
-                        elem : 'position',
-                        content : item.position
-                    },
-                    {
-                        elem : 'desc',
-                        content : item.desc
-                    }
-                ]
-            };
-        });
-    })
+        return [
+        {
+            elem : 'roller',
+            content : this.ctx.data.map(function (item) {
+                return {
+                    block : 'slider-item',
+                    content : [
+                        {
+                            block : 'image',
+                            mix : [ { block : 'slider-item', elem : 'pic' } ],
+                            url : item.pic || item.url
+                        },
+                        {
+                            elem : 'name',
+                            content : item.name
+                        },
+                        {
+                            elem : 'position',
+                            content : item.position
+                        },
+                        {
+                            elem : 'desc',
+                            content : item.desc
+                        }
+                    ]
+                };
+            })
+        },
+        {
+            elem : 'controller'
+        }
+        ];
+    }
+    )
 );

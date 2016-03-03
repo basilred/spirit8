@@ -1,0 +1,16 @@
+block('slider').elem('controller')(
+    content()(function () {
+        return {
+            block : 'radio-group',
+            mods : { theme : 'islands', size : 'l', type : 'line' },
+            name : 'radio-button',
+            val : 0,
+            options : [
+                { val : 0 },
+                { val : 400 },
+                { val : 800 }
+            ]
+        };
+    }
+    )
+);
