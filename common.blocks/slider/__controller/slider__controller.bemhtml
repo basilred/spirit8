@@ -14,13 +14,16 @@ block('slider').elem('controller')(
         return [
             {
                 elem : 'pin',
-                mods : { active : true }
+                js: { offset: 0 },
+                elemMods : { active : true }
             },
             {
-                elem : 'pin'
+                elem : 'pin',
+                js: { offset: 400 }
             },
             {
-                elem : 'pin'
+                elem : 'pin',
+                js: { offset: 800 }
             }
         ];
     }
