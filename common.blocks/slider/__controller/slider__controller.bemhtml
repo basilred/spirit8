@@ -21,10 +21,10 @@ block('slider').elem('controller')(
                 elem : 'pin',
                 js: { offset: 400 }
             },
-            {
+            /*{
                 elem : 'pin',
                 js: { offset: 800 }
-            }
+            }*/
         ];
     }
     )
