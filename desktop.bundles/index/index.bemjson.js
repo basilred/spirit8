@@ -146,9 +146,9 @@ module.exports = {
                             desc : 'Do not seek to change what has come before. Seek to create that which has not.'
                         },
                         {
-                            pic : '../../common.blocks/slider-item/__pic/lee.jpg',
-                            name : 'Jet Lee',
-                            position : 'I need more money',
+                            pic : '../../common.blocks/slider-item/__pic/arnold.jpeg',
+                            name : 'Arnold Schwarzenegger',
+                            position : 'I\'l be back',
                             desc : 'Do not seek to change what has come before. Seek to create that which has not.'
                         }
                     ]
