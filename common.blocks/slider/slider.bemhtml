@@ -1,4 +1,5 @@
 block('slider')(
+    js()(true),
     content()(function () {
         return [
         {
