@@ -15,3 +15,8 @@ npm-debug.log
 *pages*/*/*.*
 !*pages*/*/*.bemjson.js
 !*pages*/.bem/*
+
+# borschik's static freeze
+*bundles*/*/img/
+
+deploy/

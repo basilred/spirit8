@@ -90,10 +90,11 @@ module.exports = function(config) {
             }],
 
             // borschik
+            [techs.borschik, { source: '?.html', target: '?.borschik.html', freeze: true }],
             [techs.borschik, { source: '?.js', target: '?.min.js', minify: isProd }],
             [techs.borschik, { source: '?.css', target: '?.min.css', tech: 'cleancss', minify: isProd }]
         ]);
 
-        nodeConfig.addTargets([/* '?.bemtree.js', */ '?.html', '?.min.css', '?.min.js']);
+        nodeConfig.addTargets([/* '?.bemtree.js', */ '?.borschik.html', '?.min.css', '?.min.js']);
     });
 };

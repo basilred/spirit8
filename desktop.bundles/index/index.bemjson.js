@@ -107,6 +107,62 @@ module.exports = {
                 }
 
             ]
+        },
+        {
+            block : 'team',
+            content : [
+                {
+                    block : 'caption',
+                    mix : [ { block : 'team', elem : 'caption' } ],
+                    content : [
+                        'meet <span>our team</span>'
+                    ]
+                },
+                {
+                    block : 'slider',
+                    data : [
+                        {
+                            url : '../../common.blocks/slider-item/__pic/statham.jpeg',
+                            name : 'Jason Statham',
+                            position : 'Knife designer',
+                            desc : 'Do not seek to change what has come before. Seek to create that which has not.'
+                        },
+                        {
+                            pic : '../../common.blocks/slider-item/__pic/vandamme.jpeg',
+                            name : 'Van Damme',
+                            position : 'No english',
+                            desc : 'Do not seek to change what has come before. Seek to create that which has not.'
+                        },
+                        {
+                            pic : '../../common.blocks/slider-item/__pic/stallone.jpeg',
+                            name : 'Silvester Stallone',
+                            position : 'Cigar lover',
+                            desc : 'Do not seek to change what has come before. Seek to create that which has not.'
+                        },
+                        {
+                            pic : '../../common.blocks/slider-item/__pic/lee.jpg',
+                            name : 'Jet Lee',
+                            position : 'I need more money',
+                            desc : 'Do not seek to change what has come before. Seek to create that which has not.'
+                        },
+                        {
+                            pic : '../../common.blocks/slider-item/__pic/arnold.jpeg',
+                            name : 'Arnold Schwarzenegger',
+                            position : 'I\'l be back',
+                            desc : 'Do not seek to change what has come before. Seek to create that which has not.'
+                        }
+                    ]
+                },
+                {
+                    // Здесь блок image добавлен, чтобы отображались элементы блока slider.
+                    // borschik иначе не "видит" их.
+                    block : 'image',
+                    // url : '../../common.blocks/slider-item/__pic/lee.jpg'
+                },
+                // {
+                //     elem : 'controller'
+                // }
+            ]
         }
     ]
 };
