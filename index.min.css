@@ -136,6 +136,7 @@
 /* ../../common.blocks/about/about.styl:begin */
 .about {
   padding: 100px calc((100% - 1146px) / 2);
+  padding-bottom: 0;
 }
 /* ../../common.blocks/about/about.styl:end */
 /* ../../common.blocks/about/__image/about__image.styl:begin */
@@ -237,6 +238,12 @@
   padding: 0 0 0 22px;
 }
 /* ../../common.blocks/about/__button/about__button.styl:end */
+/* ../../common.blocks/team/team.styl:begin */
+.team {
+  background-color: #111;
+  padding: 100px calc((100% - 1146px) / 2);
+}
+/* ../../common.blocks/team/team.styl:end */
 /* ../../common.blocks/caption/caption.styl:begin */
 .caption {
   font-family: 'Open Sans', sans-serif;
@@ -271,9 +278,143 @@
   background-color: #fcac45;
 }
 /* ../../common.blocks/caption/caption.styl:end */
+/* ../../common.blocks/team/__caption/team__caption.styl:begin */
+.team__caption {
+  color: #fff;
+}
+/* ../../common.blocks/team/__caption/team__caption.styl:end */
+/* ../../libs/bem-components/common.blocks/icon/icon.styl:begin */
+.icon {
+  display: inline-block;
+  text-align: center;
+  background: 50% no-repeat;
+/* Hack for correct baseline positioning */
+/*
+     * Чтобы иконка правильно позиционировалась внутри блочного контекста,
+     * нужно прописать родителю свойство line-height со значением, равным высоте иконки
+     */
+}
+.icon:empty:after {
+  visibility: hidden;
+  content: '\00A0';
+}
+.icon > img,
+.icon > svg {
+  margin: -5.15em 0 -5em;
+  vertical-align: middle;
+}
+/* ../../libs/bem-components/common.blocks/icon/icon.styl:end */
+/* ../../common.blocks/slider-item/__pic/slider-item__pic.styl:begin */
+.slider-item__pic {
+  width: 128px;
+  height: 128px;
+  background-color: #ffa500;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+/* ../../common.blocks/slider-item/__pic/slider-item__pic.styl:end */
+/* ../../common.blocks/slider-item/__name/slider-item__name.styl:begin */
+.slider-item__name {
+  font-size: 20px;
+  font-weight: 700;
+}
+/* ../../common.blocks/slider-item/__name/slider-item__name.styl:end */
+/* ../../common.blocks/slider-item/__position/slider-item__position.styl:begin */
+.slider-item__position {
+  font-size: 16px;
+  font-weight: 400;
+}
+/* ../../common.blocks/slider-item/__position/slider-item__position.styl:end */
+/* ../../common.blocks/slider-item/__desc/slider-item__desc.styl:begin */
+.slider-item__desc {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 30px;
+}
+/* ../../common.blocks/slider-item/__desc/slider-item__desc.styl:end */
+/* ../../common.blocks/slider/__roller/slider__roller.styl:begin */
+.slider__roller {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* ../../common.blocks/slider/__roller/slider__roller.styl:end */
+/* ../../common.blocks/slider/__pin/slider__pin.styl:begin */
+.slider__pin {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 13px;
+  background-color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.slider__pin_active {
+  background-color: #fcac45;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.slider__pin:last-child {
+  margin-right: 0;
+}
+/* ../../common.blocks/slider/__pin/slider__pin.styl:end */
+/* ../../libs/bem-components/common.blocks/image/image.styl:begin */
+.image {
+  border: 0;
+}
+/* ../../libs/bem-components/common.blocks/image/image.styl:end */
 /* ../../common.blocks/page/page.css:begin */
 .page
 {
     margin: 0;
 }
 /* ../../common.blocks/page/page.css:end */
+/* ../../common.blocks/slider-item/slider-item.styl:begin */
+.slider-item {
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 23%;
+  padding: 0 1%;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 24px;
+  text-align: center;
+  white-space: normal;
+  -webkit-transition: -webkit-transform 1s;
+          transition: transform 1s;
+}
+/* ../../common.blocks/slider-item/slider-item.styl:end */
+/* ../../common.blocks/slider/__controller/slider__controller.styl:begin */
+.slider__controller {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  margin-top: 70px;
+}
+/* ../../common.blocks/slider/__controller/slider__controller.styl:end */
+/* ../../common.blocks/slider/slider.styl:begin */
+.slider {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-top: 90px;
+}
+/* ../../common.blocks/slider/slider.styl:end */
