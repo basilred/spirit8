@@ -24,6 +24,7 @@
   },
   "scripts": {
     "start": "enb server",
+    "build": "enb make && cp desktop.bundles/index/index.min.* output/ && cp desktop.bundles/index/index.borschik.html output/index.html && cp desktop.bundles/index/img/* output/img/",
     "postinstall": "npm run deps",
     "deps": "bower i --allow-root"
   },
