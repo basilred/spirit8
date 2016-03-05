@@ -163,6 +163,44 @@ module.exports = {
                 //     elem : 'controller'
                 // }
             ]
+        },
+        {
+            block : 'services',
+            content : [
+                {
+                    block : 'caption',
+                    content : 'take a look at <span>our services</span>'
+                },
+                {
+                    elem : 'description',
+                    content : 'Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                },
+                {
+                    block : 'service',
+                    content : [
+                        {
+                            url : '../../common.blocks/service-item/__pic/webdesign.svg',
+                            caption : 'web design',
+                            description : 'The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                        },
+                        {
+                            url : '../../common.blocks/service-item/__pic/mobileapps.svg',
+                            caption : 'mobile apps',
+                            description : 'The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                        },
+                        {
+                            url : '../../common.blocks/service-item/__pic/photography.svg',
+                            caption : 'photography',
+                            description : 'The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                        },
+                        {
+                            url : '../../common.blocks/service-item/__pic/marketing.svg',
+                            caption : 'marketing',
+                            description : 'The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                        }
+                    ]
+                }
+            ]
         }
     ]
 };

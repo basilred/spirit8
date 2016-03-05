@@ -1,0 +1,27 @@
+block('service')(
+    tag()('ul'),
+    content()(function () {
+        return this.ctx.content.map(function (item) {
+            return {
+                block : 'service-item',
+                content : [
+                    {
+                        elem : 'pic',
+                        content : {
+                            block : 'image',
+                            url : item.url || ''
+                        }
+                    },
+                    {
+                        elem : 'caption',
+                        content : item.caption
+                    },
+                    {
+                        elem : 'description',
+                        content : item.description
+                    }
+                ]
+            };
+        });
+    })
+);
