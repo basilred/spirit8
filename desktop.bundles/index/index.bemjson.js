@@ -179,19 +179,22 @@ module.exports = {
                     block : 'service',
                     content : [
                         {
+                            url : '../../common.blocks/service-item/__pic/webdesign.svg',
                             caption : 'web design',
                             description : 'The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
                         },
                         {
+                            url : '../../common.blocks/service-item/__pic/mobileapps.svg',
                             caption : 'mobile apps',
                             description : 'The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
                         },
                         {
-                            url : '/img/photo.svg',
+                            url : '../../common.blocks/service-item/__pic/photography.svg',
                             caption : 'photography',
                             description : 'The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
                         },
                         {
+                            url : '../../common.blocks/service-item/__pic/marketing.svg',
                             caption : 'marketing',
                             description : 'The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
                         }
