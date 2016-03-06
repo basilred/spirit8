@@ -113,7 +113,7 @@ module.exports = {
             content : [
                 {
                     block : 'caption',
-                    mix : [ { block : 'team', elem : 'caption' } ],
+                    mods : { light : true },
                     content : [
                         'meet <span>our team</span>'
                     ]
