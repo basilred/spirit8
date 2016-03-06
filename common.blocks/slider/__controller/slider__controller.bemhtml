@@ -1,16 +1,6 @@
 block('slider').elem('controller')(
     content()(function () {
-        /*return {
-            block : 'radio-group',
-            mods : { theme : 'islands', size : 'l', type : 'line' },
-            name : 'radio-button',
-            val : 0,
-            options : [
-                { val : 0, text : 'Football' },
-                { val : 400 },
-                { val : 800 }
-            ]
-        };*/
+
         return [
             {
                 elem : 'pin',
@@ -20,7 +10,7 @@ block('slider').elem('controller')(
             {
                 elem : 'pin',
                 js: { offset: 400 }
-            },
+            }
             /*{
                 elem : 'pin',
                 js: { offset: 800 }
