@@ -5,6 +5,10 @@ provide(BEMDOM.decl(this.name, {
         js: {
             inited: function() {
                 this.sliderOffset = 0;
+                var itemWidth = 100 / this.params.items;
+                this.findBlocksInside('slider-item').map(function (item) {
+                    item.domElem.css('width', itemWidth + '%');
+                });
             }
         }
     },
@@ -32,6 +36,7 @@ provide(BEMDOM.decl(this.name, {
 {
     live: function () {
         this.liveBindTo('pin', 'click', this.prototype.onPinClick);
+        return false;
     }
 }));
 

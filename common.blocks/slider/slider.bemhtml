@@ -1,5 +1,7 @@
 block('slider')(
-    js()(true),
+    js()(function () {
+        return this.ctx.js || true;
+    }),
     content()(function () {
         return [
         {
