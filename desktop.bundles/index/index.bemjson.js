@@ -201,6 +201,23 @@ module.exports = {
                     ]
                 }
             ]
+        },
+        {
+            block : 'clients',
+            content : [
+                {
+                    block : 'caption',
+                    mods : { light : true },
+                    content : 'some of <span>our clients</span>'
+                },
+                {
+                    block : 'slider',
+                    js : { items : 1 },
+                    data : [
+                        {name: 'Vasya'}
+                    ]
+                }
+            ]
         }
     ]
 };
