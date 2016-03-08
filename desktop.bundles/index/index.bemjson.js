@@ -215,6 +215,8 @@ module.exports = {
                     block : 'slider',
                     js : { items : 1 },
                     data : [
+                        { url: '../../common.blocks/clients/clients.png' },
+                        { url: '../../common.blocks/clients/clients.png' },
                         { url: '../../common.blocks/clients/clients.png' }
                     ]
                 }
