@@ -113,13 +113,14 @@ module.exports = {
             content : [
                 {
                     block : 'caption',
-                    mix : [ { block : 'team', elem : 'caption' } ],
+                    mods : { light : true },
                     content : [
                         'meet <span>our team</span>'
                     ]
                 },
                 {
                     block : 'slider',
+                    js : { 'items' : 4 },
                     data : [
                         {
                             url : '../../common.blocks/slider-item/__pic/statham.jpeg',
@@ -198,6 +199,25 @@ module.exports = {
                             caption : 'marketing',
                             description : 'The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
                         }
+                    ]
+                }
+            ]
+        },
+        {
+            block : 'clients',
+            content : [
+                {
+                    block : 'caption',
+                    mods : { light : true },
+                    content : 'some of <span>our clients</span>'
+                },
+                {
+                    block : 'slider',
+                    js : { items : 1 },
+                    data : [
+                        { url: '../../common.blocks/clients/clients.png' },
+                        { url: '../../common.blocks/clients/clients.png' },
+                        { url: '../../common.blocks/clients/clients.png' }
                     ]
                 }
             ]

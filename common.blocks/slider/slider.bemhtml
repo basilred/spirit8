@@ -1,5 +1,7 @@
 block('slider')(
-    js()(true),
+    js()(function () {
+        return this.ctx.js || true;
+    }),
     content()(function () {
         return [
         {
@@ -30,9 +32,30 @@ block('slider')(
             })
         },
         {
-            elem : 'controller'
+            elem : 'controller',
+            js : function() {
+                return {
+                    pins: Math.ceil(arguments[0] / arguments[1]),
+                    baseOffset: arguments[1] * 100
+                };
+            }(this.ctx.data.length, this.ctx.js.items)
         }
         ];
     }
     )
+);
+
+block('slider').elem('controller')(
+    content()(function() {
+        var pins = [];
+        for (var i = 0; i < this.ctx.js.pins; i++) {
+            pins.push({
+                elem : 'pin',
+                js : { offset : this.ctx.js.baseOffset * i },
+                elemMods : { active : i == 0 ? true : false }
+            });
+        }
+        console.log(pins);
+        return pins;
+    })
 );
