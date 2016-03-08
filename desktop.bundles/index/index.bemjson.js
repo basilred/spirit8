@@ -120,7 +120,7 @@ module.exports = {
                 },
                 {
                     block : 'slider',
-                    js : { 'items' : 3 },
+                    js : { 'items' : 4 },
                     data : [
                         {
                             url : '../../common.blocks/slider-item/__pic/statham.jpeg',
