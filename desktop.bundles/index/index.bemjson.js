@@ -215,7 +215,7 @@ module.exports = {
                     block : 'slider',
                     js : { items : 1 },
                     data : [
-                        {name: 'Vasya'}
+                        { url: '../../common.blocks/clients/clients.png' }
                     ]
                 }
             ]
