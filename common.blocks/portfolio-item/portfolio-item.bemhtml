@@ -1,0 +1,11 @@
+block('portfolio-item')(
+    content()(function() {
+        return {
+            elem : 'picture',
+            content : {
+                block : 'image',
+                url : this.ctx.url
+            }
+        };
+    })
+);

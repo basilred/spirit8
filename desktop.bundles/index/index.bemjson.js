@@ -250,6 +250,71 @@ module.exports = {
                                 { val : 3, text : 'Mobile Design' },
                                 { val : 4, text : 'Photography' }
                             ]
+                        },
+                        {
+                            block : 'portfolio-grid',
+                            content : [
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/mystery.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/mystery.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/mystery.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/mystery.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/on.limited.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/on.limited.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/on.limited.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/on.limited.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/photo.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/photo.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/photo.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    url : '../../common.blocks/portfolio-item/photo.jpg',
+                                    name : 'trend and fashion'
+                                },
+                            ]
                         }
                     ]
                 }
