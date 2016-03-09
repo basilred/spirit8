@@ -243,8 +243,7 @@ module.exports = {
                         {
                             block : 'radio-group',
                             mods : { section : 'portfolio' },
-                            // mods : { theme : 'islands', size : 'm', type : 'line' },
-                            // name : 'radio-line',
+                            val : 1,
                             options : [
                                 { val : 1, text : 'All' },
                                 { val : 2, text : 'Web Design' },
