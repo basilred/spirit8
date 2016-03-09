@@ -234,15 +234,24 @@ module.exports = {
                     content : 'Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
                 },
                 {
-                    block : 'radio-group',
-                    mods : { section : 'portfolio' },
-                    // mods : { theme : 'islands', size : 'm', type : 'line' },
-                    // name : 'radio-line',
-                    options : [
-                        { val : 1, text : 'All' },
-                        { val : 2, text : 'Web Design' },
-                        { val : 3, text : 'Mobile Design' },
-                        { val : 4, text : 'Photography' }
+                    block : 'filter',
+                    content : [
+                        {
+                            elem : 'caption',
+                            content : 'filter by type'
+                        },
+                        {
+                            block : 'radio-group',
+                            mods : { section : 'portfolio' },
+                            // mods : { theme : 'islands', size : 'm', type : 'line' },
+                            // name : 'radio-line',
+                            options : [
+                                { val : 1, text : 'All' },
+                                { val : 2, text : 'Web Design' },
+                                { val : 3, text : 'Mobile Design' },
+                                { val : 4, text : 'Photography' }
+                            ]
+                        }
                     ]
                 }
             ]
