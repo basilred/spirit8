@@ -1,0 +1,17 @@
+.portfolio-grid
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+
+    &_view_1 > .portfolio-item
+        display: block;
+
+    &_view_2 > .portfolio-item:not(.portfolio-item_type_web)
+        display: none;
+
+    &_view_3 > .portfolio-item:not(.portfolio-item_type_mobile)
+        display: none;
+
+    &_view_4 > .portfolio-item:not(.portfolio-item_type_photo)
+        display: none;

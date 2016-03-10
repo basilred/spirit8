@@ -1,6 +1,6 @@
 module.exports = {
     block : 'page',
-    title : 'sirit8',
+    title : 'spirit8',
     favicon : '/favicon.ico',
     head : [
         { elem : 'meta', attrs : { name : 'description', content : '' } },
@@ -218,6 +218,118 @@ module.exports = {
                         { url: '../../common.blocks/clients/clients.png' },
                         { url: '../../common.blocks/clients/clients.png' },
                         { url: '../../common.blocks/clients/clients.png' }
+                    ]
+                }
+            ]
+        },
+        {
+            block : 'services',
+            content : [
+                {
+                    block : 'caption',
+                    content : 'take a look at <span>our work</span>'
+                },
+                {
+                    elem : 'description',
+                    content : 'Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                },
+                {
+                    block : 'filter',
+                    js : true,
+                    content : [
+                        {
+                            elem : 'caption',
+                            content : 'filter by type'
+                        },
+                        {
+                            block : 'radio-group',
+                            mods : { section : 'portfolio' },
+                            val : 1,
+                            options : [
+                                { val : 1, text : 'All' },
+                                { val : 2, text : 'Web Design' },
+                                { val : 3, text : 'Mobile Design' },
+                                { val : 4, text : 'Photography' }
+                            ]
+                        },
+                        {
+                            block : 'portfolio-grid',
+                            js : true,
+                            content : [
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'web' },
+                                    url : '../../common.blocks/portfolio-item/mystery.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'web' },
+                                    url : '../../common.blocks/portfolio-item/mystery.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'web' },
+                                    url : '../../common.blocks/portfolio-item/mystery.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'web' },
+                                    url : '../../common.blocks/portfolio-item/mystery.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'mobile' },
+                                    url : '../../common.blocks/portfolio-item/on.limited.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'mobile' },
+                                    url : '../../common.blocks/portfolio-item/on.limited.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'mobile' },
+                                    url : '../../common.blocks/portfolio-item/on.limited.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'mobile' },
+                                    url : '../../common.blocks/portfolio-item/on.limited.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'photo' },
+                                    url : '../../common.blocks/portfolio-item/photo.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'photo' },
+                                    url : '../../common.blocks/portfolio-item/photo.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'photo' },
+                                    url : '../../common.blocks/portfolio-item/photo.jpg',
+                                    name : 'trend and fashion'
+                                },
+                                {
+                                    block : 'portfolio-item',
+                                    mods : { type : 'photo' },
+                                    url : '../../common.blocks/portfolio-item/photo.jpg',
+                                    name : 'trend and fashion'
+                                },
+                            ]
+                        }
                     ]
                 }
             ]
