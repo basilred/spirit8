@@ -1,0 +1,6 @@
+block('author').elem('name')(
+    tag()('span'),
+    content()(function () {
+        return this.ctx.content + ', ';
+    })
+);
