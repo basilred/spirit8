@@ -356,7 +356,7 @@ module.exports = {
                                 },
                                 {
                                     block : 'author',
-                                    mix : [ { elem : 'author' } ],
+                                    mix : [ { block : 'cite', elem : 'author' } ],
                                     content : [
                                         {
                                             elem : 'name',
