@@ -333,6 +333,46 @@ module.exports = {
                     ]
                 }
             ]
-        }
+        },
+        {
+            block : 'clients',
+            mix : [ { block : 'testimonials' } ],
+            content : [
+                {
+                    block : 'caption',
+                    mods : { light : true },
+                    content : '<span>our clients\'</span> testimonials'
+                },
+                {
+                    block : 'slider',
+                    js : { items : 1 },
+                    content : [
+                        {
+                            block : 'cite',
+                            content : [
+                                {
+                                    elem : 'text',
+                                    content : 'This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                                },
+                                {
+                                    block : 'author',
+                                    mix : [ { elem : 'author' } ],
+                                    content : [
+                                        {
+                                            elem : 'name',
+                                            content : 'Dean Martin'
+                                        },
+                                        {
+                                            elem : 'position',
+                                            content : 'CEO Acme Inc.'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
     ]
 };
