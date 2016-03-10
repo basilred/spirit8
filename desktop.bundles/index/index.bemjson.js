@@ -370,6 +370,52 @@ module.exports = {
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            block : 'cite',
+                            content : [
+                                {
+                                    elem : 'text',
+                                    content : 'This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                                },
+                                {
+                                    block : 'author',
+                                    mix : [ { block : 'cite', elem : 'author' } ],
+                                    content : [
+                                        {
+                                            elem : 'name',
+                                            content : 'Bill Gates'
+                                        },
+                                        {
+                                            elem : 'position',
+                                            content : 'President of Microsoft Corp.'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'cite',
+                            content : [
+                                {
+                                    elem : 'text',
+                                    content : 'This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                                },
+                                {
+                                    block : 'author',
+                                    mix : [ { block : 'cite', elem : 'author' } ],
+                                    content : [
+                                        {
+                                            elem : 'name',
+                                            content : 'Steve Jobs'
+                                        },
+                                        {
+                                            elem : 'position',
+                                            content : 'CEO Apple Inc.'
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }
