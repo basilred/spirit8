@@ -1,6 +1,6 @@
 module.exports = {
     block : 'page',
-    title : 'sirit8',
+    title : 'spirit8',
     favicon : '/favicon.ico',
     head : [
         { elem : 'meta', attrs : { name : 'description', content : '' } },
