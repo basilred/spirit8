@@ -6,7 +6,8 @@ module.exports = {
         { elem : 'meta', attrs : { name : 'description', content : '' } },
         { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
         { elem : 'css', url : 'index.min.css' },
-        { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' }
+        { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' },
+        { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Lato:700' }
     ],
     scripts: [{ elem : 'js', url : 'index.min.js' }],
     // mods : { theme : 'islands' },
