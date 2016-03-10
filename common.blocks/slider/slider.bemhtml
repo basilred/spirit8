@@ -3,31 +3,36 @@ block('slider')(
         return this.ctx.js || true;
     }),
     content()(function () {
+        var content = this.ctx.data || this.ctx.content;
+        var isDataExists = this.ctx.data;
         return [
         {
             elem : 'roller',
-            content : this.ctx.data.map(function (item) {
+            content : content.map(function (item) {
                 return {
                     block : 'slider-item',
-                    content : [
-                        {
-                            block : 'image',
-                            mix : [ { block : 'slider-item', elem : 'pic' } ],
-                            url : item.pic || item.url
-                        },
-                        {
-                            elem : 'name',
-                            content : item.name
-                        },
-                        {
-                            elem : 'position',
-                            content : item.position
-                        },
-                        {
-                            elem : 'desc',
-                            content : item.desc
-                        }
-                    ]
+                    content : function () {
+                        if (!isDataExists) return item;
+                        return [
+                            {
+                                block : 'image',
+                                mix : [ { block : 'slider-item', elem : 'pic' } ],
+                                url : item.pic || item.url
+                            },
+                            {
+                                elem : 'name',
+                                content : item.name
+                            },
+                            {
+                                elem : 'position',
+                                content : item.position
+                            },
+                            {
+                                elem : 'desc',
+                                content : item.desc
+                            }
+                        ];
+                    }()
                 };
             })
         },
@@ -38,7 +43,7 @@ block('slider')(
                     pins: Math.ceil(arguments[0] / arguments[1]),
                     baseOffset: arguments[1] * 100
                 };
-            }(this.ctx.data.length, this.ctx.js.items)
+            }(content.length, this.ctx.js.items)
         }
         ];
     }

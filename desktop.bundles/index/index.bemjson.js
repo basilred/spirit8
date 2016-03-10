@@ -6,7 +6,8 @@ module.exports = {
         { elem : 'meta', attrs : { name : 'description', content : '' } },
         { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
         { elem : 'css', url : 'index.min.css' },
-        { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' }
+        { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,400italic,600,700' },
+        { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Lato:700' }
     ],
     scripts: [{ elem : 'js', url : 'index.min.js' }],
     // mods : { theme : 'islands' },
@@ -333,6 +334,92 @@ module.exports = {
                     ]
                 }
             ]
-        }
+        },
+        {
+            block : 'clients',
+            mix : [ { block : 'testimonials' } ],
+            content : [
+                {
+                    block : 'caption',
+                    mods : { light : true },
+                    content : '<span>our clients\'</span> testimonials'
+                },
+                {
+                    block : 'slider',
+                    js : { items : 1 },
+                    content : [
+                        {
+                            block : 'cite',
+                            content : [
+                                {
+                                    elem : 'text',
+                                    content : 'This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                                },
+                                {
+                                    block : 'author',
+                                    mix : [ { block : 'cite', elem : 'author' } ],
+                                    content : [
+                                        {
+                                            elem : 'name',
+                                            content : 'Dean Martin'
+                                        },
+                                        {
+                                            elem : 'position',
+                                            content : 'CEO Acme Inc.'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'cite',
+                            content : [
+                                {
+                                    elem : 'text',
+                                    content : 'This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                                },
+                                {
+                                    block : 'author',
+                                    mix : [ { block : 'cite', elem : 'author' } ],
+                                    content : [
+                                        {
+                                            elem : 'name',
+                                            content : 'Bill Gates'
+                                        },
+                                        {
+                                            elem : 'position',
+                                            content : 'President of Microsoft Corp.'
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            block : 'cite',
+                            content : [
+                                {
+                                    elem : 'text',
+                                    content : 'This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                                },
+                                {
+                                    block : 'author',
+                                    mix : [ { block : 'cite', elem : 'author' } ],
+                                    content : [
+                                        {
+                                            elem : 'name',
+                                            content : 'Steve Jobs'
+                                        },
+                                        {
+                                            elem : 'position',
+                                            content : 'CEO Apple Inc.'
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
     ]
 };
