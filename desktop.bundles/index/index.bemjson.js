@@ -235,6 +235,7 @@ module.exports = {
                 },
                 {
                     block : 'filter',
+                    js : true,
                     content : [
                         {
                             elem : 'caption',
@@ -253,64 +254,77 @@ module.exports = {
                         },
                         {
                             block : 'portfolio-grid',
+                            js : true,
                             content : [
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'web' },
                                     url : '../../common.blocks/portfolio-item/mystery.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'web' },
                                     url : '../../common.blocks/portfolio-item/mystery.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'web' },
                                     url : '../../common.blocks/portfolio-item/mystery.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'web' },
                                     url : '../../common.blocks/portfolio-item/mystery.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'mobile' },
                                     url : '../../common.blocks/portfolio-item/on.limited.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'mobile' },
                                     url : '../../common.blocks/portfolio-item/on.limited.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'mobile' },
                                     url : '../../common.blocks/portfolio-item/on.limited.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'mobile' },
                                     url : '../../common.blocks/portfolio-item/on.limited.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'photo' },
                                     url : '../../common.blocks/portfolio-item/photo.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'photo' },
                                     url : '../../common.blocks/portfolio-item/photo.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'photo' },
                                     url : '../../common.blocks/portfolio-item/photo.jpg',
                                     name : 'trend and fashion'
                                 },
                                 {
                                     block : 'portfolio-item',
+                                    mods : { type : 'photo' },
                                     url : '../../common.blocks/portfolio-item/photo.jpg',
                                     name : 'trend and fashion'
                                 },
