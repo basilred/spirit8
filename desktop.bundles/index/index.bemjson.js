@@ -421,5 +421,72 @@ module.exports = {
                 }
             ]
         },
+        {
+            block : 'services',
+            mix : [ { block : 'contact' } ],
+            content : [
+                {
+                    block : 'caption',
+                    content : 'feel free to <span>contact us</span>'
+                },
+                {
+                    elem : 'description',
+                    mix : [ { block : 'contact', elem : 'description' } ],
+                    content : 'Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.'
+                },
+                {
+                    block : 'contact-form',
+                    mix : [ { block : 'contact', elem : 'form' } ],
+                    content : [
+                        {
+                            block : 'name-input',
+                            content : [
+                                {
+                                    elem : 'text',
+                                    content : 'Name'
+                                },
+                                {
+                                    block : 'input',
+                                    mix : { block : 'contact-form', elem : 'name' },
+                                    // mods : { theme : 'islands', size : 'l', width : 'available' }
+                                }
+                            ]
+                        },
+                        {
+                            block : 'email-input',
+                            content : [
+                                {
+                                    elem : 'text',
+                                    content : 'Email address'
+                                },
+                                {
+                                    block : 'input',
+                                    mix : { block : 'contact-form', elem : 'email' }
+                                }
+                            ]
+                        },
+                        {
+                            block : 'text-input',
+                            content : [
+                                {
+                                    elem : 'text',
+                                    content : 'Message'
+                                },
+                                {
+                                    block : 'textarea',
+                                    mix : { block : 'contact-form', elem : 'textarea' }
+                                }
+                            ]
+                        },
+                        {
+                            block : 'button',
+                            mods : { type : 'submit' },
+                            text : 'SEND'
+                        }
+                    ]
+                }
+
+            ]
+        },
     ]
 };
