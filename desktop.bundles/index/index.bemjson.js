@@ -57,10 +57,17 @@ module.exports = {
                     ]
                 },
                 {
-                    block : 'downarrow',
-                    mix : [ { block : 'link', mods : { pseudo : true } } ]
+                    block : 'link',
+                    url : '#about',
+                    content : {
+                            block : 'downarrow'
+                    }
                 }
             ]
+        },
+        {
+            block : 'anchor',
+            name : 'about'
         },
         {
             block : 'about',
