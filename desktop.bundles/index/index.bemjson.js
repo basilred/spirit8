@@ -488,5 +488,20 @@ module.exports = {
 
             ]
         },
+        {
+            block : 'footer',
+            content : [
+                {
+                    elem : 'rights',
+                    content : 'ALL RIGHTS RESERVED. COPYRIGHT © 2014 <span>SPIRIT8</span>'
+                },
+                {
+                    block : 'socials',
+                    content : [
+                        'fb', 'twitter', 'google', 'linkedin', 'dribble'
+                    ]
+                }
+            ]
+        }
     ]
 };

@@ -1,0 +1,20 @@
+block('socials')(
+    tag()('ul'),
+    content()(function () {
+        return this.ctx.content.map(function (item) {
+            return applyCtx({
+                block : 'socials',
+                elem : 'item',
+                content : item
+            });
+        });
+    })
+);
+
+block('socials').elem('item')(
+    tag()('li'),
+    mix()(function () {
+        return { elem : this.ctx.content };
+    }),
+    content()('')
+);
