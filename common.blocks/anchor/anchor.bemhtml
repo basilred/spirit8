@@ -1,0 +1,8 @@
+block('anchor')(
+    tag()('a'),
+    attrs()(function () {
+        return {
+            name : this.ctx.name
+        };
+    })
+);
