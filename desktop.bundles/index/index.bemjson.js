@@ -28,9 +28,12 @@ module.exports = {
                                 'home', 'about', 'services', 'portfolio', 'testimonials', 'contact'
                             ].map(function (item) {
                                 var res = {
-                                    block : 'menu-item',
-                                    mix : [ { block : 'link', mods : { pseudo : true } } ],
-                                    content : item
+                                        block : 'menu-item',
+                                        content : {
+                                            block : 'link',
+                                            url : '#' + item,
+                                            content : item
+                                        }
                                 };
                                 if (item == 'home') {
                                     res.mods = { active : true };
