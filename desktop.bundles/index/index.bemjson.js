@@ -10,8 +10,11 @@ module.exports = {
         { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Lato:700' }
     ],
     scripts: [{ elem : 'js', url : 'index.min.js' }],
-    // mods : { theme : 'islands' },
     content : [
+        {
+            block : 'anchor',
+            name : 'home'
+        },
         {
             block : 'start',
             content : [
@@ -24,17 +27,18 @@ module.exports = {
                         },
                         {
                             block : 'menu',
+                            mods : { mode : 'radio' },
                             content : [
                                 'home', 'about', 'services', 'portfolio', 'testimonials', 'contact'
                             ].map(function (item) {
                                 var res = {
-                                    block : 'menu-item',
-                                    mix : [ { block : 'link', mods : { pseudo : true } } ],
-                                    content : item
+                                        block : 'menu-item',
+                                        content : {
+                                            block : 'link',
+                                            url : '#' + item,
+                                            content : item
+                                        }
                                 };
-                                if (item == 'home') {
-                                    res.mods = { active : true };
-                                }
                                 return res;
                             })
                         }
@@ -54,10 +58,17 @@ module.exports = {
                     ]
                 },
                 {
-                    block : 'downarrow',
-                    mix : [ { block : 'link', mods : { pseudo : true } } ]
+                    block : 'link',
+                    url : '#about',
+                    content : {
+                            block : 'downarrow'
+                    }
                 }
             ]
+        },
+        {
+            block : 'anchor',
+            name : 'about'
         },
         {
             block : 'about',
@@ -167,6 +178,10 @@ module.exports = {
             ]
         },
         {
+            block : 'anchor',
+            name : 'services'
+        },
+        {
             block : 'services',
             content : [
                 {
@@ -222,6 +237,10 @@ module.exports = {
                     ]
                 }
             ]
+        },
+        {
+            block : 'anchor',
+            name : 'portfolio'
         },
         {
             block : 'services',
@@ -336,6 +355,10 @@ module.exports = {
             ]
         },
         {
+            block : 'anchor',
+            name : 'testimonials'
+        },
+        {
             block : 'clients',
             mix : [ { block : 'testimonials' } ],
             content : [
@@ -420,6 +443,10 @@ module.exports = {
                     ]
                 }
             ]
+        },
+        {
+            block : 'anchor',
+            name : 'contact'
         },
         {
             block : 'services',

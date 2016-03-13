@@ -1,6 +1,5 @@
 .menu-item
 {
-    /* Text style for "HOME About" */
     display: inline-block;
     position: relative;
     color: white;
@@ -12,4 +11,10 @@
     margin-left: 27px;
     margin-bottom: 24px;
     cursor: pointer;
+}
+
+.menu-item > .link
+{
+    text-decoration: none;
+    color: white;
 }

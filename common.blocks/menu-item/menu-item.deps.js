@@ -1,0 +1,6 @@
+({
+    mustDeps: [
+        { mods : { checked : '' } }
+    ],
+    shouldDeps: []
+})
