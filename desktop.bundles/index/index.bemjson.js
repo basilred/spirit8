@@ -27,6 +27,7 @@ module.exports = {
                         },
                         {
                             block : 'menu',
+                            mods : { mode : 'radio' },
                             content : [
                                 'home', 'about', 'services', 'portfolio', 'testimonials', 'contact'
                             ].map(function (item) {
@@ -38,9 +39,6 @@ module.exports = {
                                             content : item
                                         }
                                 };
-                                if (item == 'home') {
-                                    res.mods = { active : true };
-                                }
                                 return res;
                             })
                         }
