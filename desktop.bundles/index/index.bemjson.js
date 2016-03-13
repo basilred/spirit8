@@ -12,6 +12,10 @@ module.exports = {
     scripts: [{ elem : 'js', url : 'index.min.js' }],
     content : [
         {
+            block : 'anchor',
+            name : 'home'
+        },
+        {
             block : 'start',
             content : [
                 {
@@ -176,6 +180,10 @@ module.exports = {
             ]
         },
         {
+            block : 'anchor',
+            name : 'services'
+        },
+        {
             block : 'services',
             content : [
                 {
@@ -231,6 +239,10 @@ module.exports = {
                     ]
                 }
             ]
+        },
+        {
+            block : 'anchor',
+            name : 'portfolio'
         },
         {
             block : 'services',
@@ -345,6 +357,10 @@ module.exports = {
             ]
         },
         {
+            block : 'anchor',
+            name : 'testimonials'
+        },
+        {
             block : 'clients',
             mix : [ { block : 'testimonials' } ],
             content : [
@@ -429,6 +445,10 @@ module.exports = {
                     ]
                 }
             ]
+        },
+        {
+            block : 'anchor',
+            name : 'contact'
         },
         {
             block : 'services',
