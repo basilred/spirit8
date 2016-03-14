@@ -110,6 +110,8 @@ module.exports = {
                                 },
                                 {
                                     block : 'button',
+                                    mods : { type : 'link' },
+                                    url : '#portfolio',
                                     mix : [ { block : 'about', elem : 'button' } ],
                                     content : 'browse our work'
                                 }
