@@ -173,10 +173,7 @@ module.exports = {
                     // borschik иначе не "видит" их.
                     block : 'image',
                     // url : '../../common.blocks/slider-item/__pic/lee.jpg'
-                },
-                // {
-                //     elem : 'controller'
-                // }
+                }
             ]
         },
         {
