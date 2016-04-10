@@ -18,3 +18,11 @@
     text-decoration: none;
     color: white;
 }
+
+@media (max-width: 768px)
+{
+    .menu-item
+    {
+        display: inherit;
+    }
+}
