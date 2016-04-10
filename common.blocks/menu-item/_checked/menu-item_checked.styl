@@ -1,5 +1,4 @@
 .menu-item_checked::after
-{
     content: '';
     box-sizing: border-box;
     display: block;
@@ -12,4 +11,7 @@
     left: calc(50% - 30px);
 
     cursor: auto;
-}
+
+@media (max-width: 768px)
+    .menu-item_checked::after
+        bottom: -4px;
