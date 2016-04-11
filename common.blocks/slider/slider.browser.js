@@ -5,10 +5,21 @@ provide(BEMDOM.decl(this.name, {
         js: {
             inited: function() {
                 this.sliderOffset = 0;
+                if (document.body.clientWidth < 768) this.setMod('mobile');
                 var itemWidth = 100 / this.params.items;
                 this.findBlocksInside('slider-item').map(function (item) {
-                    item.domElem.css('width', itemWidth + '%');
+                    item.domElem.css({
+                        'width': itemWidth + '%'
+                    });
                 });
+            }
+        },
+        'mobile': {
+            'true': function () {
+                if (this.params.items > 2) {
+                    // console.log('Them more');
+                    // this.params.items = 2;
+                }
             }
         }
     },
