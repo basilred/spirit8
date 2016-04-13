@@ -35,6 +35,7 @@ module.exports = {
                                         block : 'menu-item',
                                         content : {
                                             block : 'link',
+                                            mods : { scrolling : 'smooth' },
                                             url : '#' + item,
                                             content : item
                                         }
@@ -60,6 +61,7 @@ module.exports = {
                 {
                     block : 'link',
                     url : '#about',
+                    mods : { scrolling : 'smooth' },
                     content : {
                             block : 'downarrow'
                     }
