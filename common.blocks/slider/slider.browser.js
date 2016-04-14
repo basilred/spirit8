@@ -39,17 +39,44 @@ provide(BEMDOM.decl(this.name, {
             }
         }
     },
+
     onPinClick: function (e) {
         if (!this.hasMod(e.currentTarget, 'active')) {
             this.sliderOffset = this.elemParams(e.currentTarget).offset;
             this.delMod(this.elem('pin'), 'active')
                 .setMod(e.currentTarget, 'active');
         }
+    },
+
+    touchObject: {
+        started: undefined,
+        detecting: undefined,
+        touch: undefined,
+        x: undefined,
+        y: undefined,
+        onTouchStart: function (e) {
+            console.log('Start touching');
+            // console.log(e);
+            // if (e.touches.length != 1 || started) {
+            //     return;
+            // }
+            //
+            // this.detecting = true;
+            //
+            // this.touch = e.changedTouches[0];
+        }
     }
 },
 {
     live: function () {
         this.liveBindTo('pin', 'click', this.prototype.onPinClick);
+
+        this.liveBindTo('roller', 'touchstart', this.prototype.touchObject.onTouchStart);
+
+        this.liveBindTo('roller', 'touchend', this.prototype.touchObject.onTouchEnd);
+
+        this.liveBindTo('roller', 'touchmove', this.prototype.touchObject.onTouchMove);
+
         return false;
     }
 }));
