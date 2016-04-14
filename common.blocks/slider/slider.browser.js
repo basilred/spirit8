@@ -30,7 +30,10 @@ provide(BEMDOM.decl(this.name, {
                     // Нужно применить transform: translateX(n); к каждому блоку slider-item
                     var offset = this.sliderOffset;
                     this.findBlocksInside('slider-item').map(function (item) {
-                        item.domElem.css('transform', 'translateX(-' + offset + '%)');
+                        item.domElem.css({
+                            'transform': 'translateX(-' + offset + '%)',
+                            'transform': 'translate3d(-' + offset + '%, 0, 0)'
+                        });
                     });
                 }
             }
