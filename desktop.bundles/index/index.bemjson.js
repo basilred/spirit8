@@ -10,6 +10,7 @@ module.exports = {
         { elem : 'css', url : 'https://fonts.googleapis.com/css?family=Lato:700' }
     ],
     scripts: [{ elem : 'js', url : 'index.min.js' }],
+    mods : { scrolling : 'smooth' },
     content : [
         {
             block : 'anchor',
