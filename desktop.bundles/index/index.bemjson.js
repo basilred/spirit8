@@ -13,11 +13,8 @@ module.exports = {
     mods : { scrolling : 'smooth' },
     content : [
         {
-            block : 'anchor',
-            name : 'home'
-        },
-        {
             block : 'start',
+            attrs : { 'id' : 'home' },
             content : [
                 {
                     elem : 'head',
@@ -70,11 +67,8 @@ module.exports = {
             ]
         },
         {
-            block : 'anchor',
-            name : 'about'
-        },
-        {
             block : 'about',
+            attrs : { 'id' : 'about' },
             content : [
                 {
                     elem : 'image',

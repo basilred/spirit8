@@ -1,4 +1,4 @@
-modules.define('page', ['i-bem__dom'], function(provide, BEMDOM) {
+modules.define('page', ['i-bem__dom', 'jquery'], function(provide, BEMDOM, $) {
 
 var scrollTime = 500;
 
@@ -15,13 +15,11 @@ provide(BEMDOM.decl(this.name, {
 
                         e.preventDefault();
 
-                        var refTo = item.domElem.attr('href').slice(1);
-                        var refBlock = that.findBlocksInside('anchor').filter(function (item) {
-                            return item.domElem.attr('name') === refTo;
-                        });
+                        var refTo = item.domElem.attr('href');
+                        var refBlock = $(document.querySelector(refTo));
 
-                        if (refBlock.length) {
-                            var offset = refBlock[0].domElem.offset().top;
+                        if (refBlock) {
+                            var offset = refBlock.offset().top;
                             that.domElem.animate({ scrollTop: offset }, scrollTime);
                         }
                     })
