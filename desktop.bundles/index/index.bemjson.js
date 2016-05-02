@@ -174,11 +174,8 @@ module.exports = {
             ]
         },
         {
-            block : 'anchor',
-            name : 'services'
-        },
-        {
             block : 'services',
+            attrs : { 'id' : 'services' },
             content : [
                 {
                     block : 'caption',
@@ -235,11 +232,8 @@ module.exports = {
             ]
         },
         {
-            block : 'anchor',
-            name : 'portfolio'
-        },
-        {
             block : 'services',
+            attrs : { 'id' : 'portfolio' },
             content : [
                 {
                     block : 'caption',
@@ -351,12 +345,9 @@ module.exports = {
             ]
         },
         {
-            block : 'anchor',
-            name : 'testimonials'
-        },
-        {
             block : 'clients',
             mix : [ { block : 'testimonials' } ],
+            attrs : { 'id' : 'testimonials' },
             content : [
                 {
                     block : 'caption',
@@ -441,12 +432,9 @@ module.exports = {
             ]
         },
         {
-            block : 'anchor',
-            name : 'contact'
-        },
-        {
             block : 'services',
             mix : [ { block : 'contact' } ],
+            attrs : { 'id' : 'contact' },
             content : [
                 {
                     block : 'caption',
