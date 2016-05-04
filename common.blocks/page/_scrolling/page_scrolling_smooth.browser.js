@@ -9,10 +9,15 @@ provide(BEMDOM.decl(this.name, {
 
                 that = this;
 
-                this.findBlocksInside('link').map(function (item) {
+                var blocks = [];
 
+                blocks = blocks.concat(
+                    this.findBlocksInside({ block : 'button', modName : 'type', modVal : 'link' }),
+                    this.findBlocksInside('link')
+                );
+
+                blocks.map(function (item) {
                     item.bindTo('click', function (e) {
-
                         e.preventDefault();
 
                         var refTo = item.domElem.attr('href');
